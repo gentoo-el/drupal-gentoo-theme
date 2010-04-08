@@ -20,10 +20,10 @@
     </td>
     <td style="color:white; text-align:left; background-color:black;" id="menu">
 		<?php print theme('links', $primary_links, array('class' => 'links', 'id' => 'subnavlist')) ?>
-    </td>
     		<?php if (in_array('root', array_values($user->roles))) {
 			print theme('links', $secondary_links, array('class' => 'links', 'id' => 'subnavlist')) 
 		} ?>
+    </td>
   </tr>
   <tr>
     <td colspan="2"><div><?php print $header ?></div></td>
