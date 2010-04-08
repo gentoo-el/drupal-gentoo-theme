@@ -15,11 +15,37 @@
 
 <table border="0" cellpadding="0" cellspacing="0" id="header">
   <tr>
-    <td style="width:225px; height:129px; padding:0px;" id="logo">
+    <td id="logo">
       <?php if ($logo) { ?><a href="<?php print $front_page ?>" title="<?php print t('Home') ?>"><img src="<?php print $logo ?>" alt="<?php print t('Home') ?>" /></a><?php } ?>
+      <?php if ($site_name) { ?><h1 class='site-name'><a href="<?php print $front_page ?>" title="<?php print t('Home') ?>"><?php print $site_name ?></a></h1><?php } ?>
+      <?php if ($site_slogan) { ?><div class='site-slogan'><?php print $site_slogan ?></div><?php } ?>
     </td>
-    <td style="color:white; text-align:left; background-color:black;" id="menu">
-		<?php print theme('links', $primary_links, array('class' => 'links', 'id' => 'subnavlist')) ?>
+    <td id="menu">
+    
+    <!--Google Adsense start-->
+    <div style="float: right">
+    <script type="text/javascript"><!--
+         google_ad_client = "pub-2167487408617568";
+         google_alternate_color = "41347B";
+         google_ad_width = 728;
+         google_ad_height = 90;
+         google_ad_format = "728x90_as";
+         google_ad_type = "text_image";
+         google_ad_channel ="";
+         google_color_border = "41347B";
+         google_color_bg = "41347B";
+         google_color_link = "80FF00";
+         google_color_text = "FFFFFF";
+         google_color_url = "66B5FF";
+    //--></script>
+    <script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
+    <!--Google Adsense start HEERE-->
+    </div>
+    <div class="clear-block"> </div>
+    
+      <?php if (isset($secondary_links)) { ?><?php print theme('links', $secondary_links, array('class' => 'links', 'id' => 'subnavlist')) ?><?php } ?>
+      <?php if (isset($primary_links)) { ?><?php print theme('links', $primary_links, array('class' => 'links', 'id' => 'navlist')) ?><?php } ?>
+      <?php print $search_box ?>
     </td>
   </tr>
   <tr>
@@ -29,9 +55,7 @@
 
 <table border="0" cellpadding="0" cellspacing="0" id="content">
   <tr>
-    <?php if ($left) { ?><td style="background-color:#dddaec;" id="sidebar-left">
-	<div style="position:absolute; left:93px;">
-	<img src="/sites/all/themes/gentoo-drupal-theme/gridtest.gif"></img></div><br><br><br><br><br><br>
+    <?php if ($left) { ?><td id="sidebar-left">
       <?php print $left ?>
     </td><?php } ?>
     <td valign="top">
