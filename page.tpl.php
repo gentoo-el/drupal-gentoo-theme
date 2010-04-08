@@ -19,9 +19,9 @@
       <?php if ($logo) { ?><a href="<?php print $front_page ?>" title="<?php print t('Home') ?>"><img src="<?php print $logo ?>" alt="<?php print t('Home') ?>" /></a><?php } ?>
     </td>
     <td style="color:white; text-align:left; background-color:black;" id="menu">
-		<?php print theme('links', $primary_links, array('class' => 'links', 'id' => 'subnavlist')) ?>
-    		<?php if (in_array('root', array_values($user->roles))) {
-			print theme('links', $secondary_links, array('class' => 'links', 'id' => 'subnavlist')) 
+		<?php print theme('links', $primary_links, array('class' => 'links', 'id' => 'subnavlist'));
+    		 if (in_array('root', array_values($user->roles))) {
+			print theme('links', $secondary_links, array('class' => 'links', 'id' => 'subnavlist')); 
 		} ?>
     </td>
   </tr>
