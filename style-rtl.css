@@ -13,9 +13,11 @@ body {
   padding: 0 0 1.2em 0.8em;
 }
 #subnavlist {
+  color:white;
   padding: 0.5em 0 0.4em 1.2em;
 }
 ul.links li {
+  color:white;
   border-right: 1px solid #9cf;
   border-left: none;
 }
