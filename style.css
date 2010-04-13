@@ -209,7 +209,7 @@ table {
 .title, .title a {
 /*  font-weight: bold; */
   font-size: 1.2em;
-  color: #777;
+  color: #7b59de;
   margin: 0 auto 0 auto;  /* decrease default margins for h<x>.title */
 }
 
