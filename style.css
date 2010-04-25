@@ -438,6 +438,10 @@ code, .bb-code {
 	padding-left: 4px;
 	border-left: 0px;
 }
+#menu #subnavlist.links li.first {
+	border-left: 2px solid #bbb
+}
+
 #header #menu ul {
 	display: inline;
 }
