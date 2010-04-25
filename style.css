@@ -439,6 +439,7 @@ code, .bb-code {
 	border-left: 0px;
 }
 #menu #subnavlist.links li.first {
+	padding-left: 8px;
 	border-left: 2px solid #bbb
 }
 
