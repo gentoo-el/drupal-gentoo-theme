@@ -1,8 +1,11 @@
-<?php
-// $Id: box.tpl.php,v 1.3 2007/08/07 08:39:36 goba Exp $
-?>
   <div class="box">
-    <?php if ($title) { ?><h2 class="title"><?php print $title; ?></h2><?php } ?>
+    <?php
+      if ($title) {
+        print '<h2 class="title">';
+        print $title;
+        print '</h2>';
+      }
+    ?>
     <div class="content"><?php print $content; ?></div>
- </div>
+  </div>
 
