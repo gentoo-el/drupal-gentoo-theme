@@ -24,7 +24,7 @@
       <?php
         print theme('links', $primary_links, array('class' => 'links', 'id' => 'subnavlist'));
         if (in_array('root', array_values($user->roles)))
-          print theme('links', $secondary_links, array('class' => 'links', 'id' => 'subnavlist')); 
+          print theme('links', $secondary_links, array('class' => 'links', 'id' => 'subnavlist'));
       ?>
     </td>
   </tr>
