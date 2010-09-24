@@ -55,7 +55,7 @@
         <?php
           if ($show_messages)
             print $messages;
-          print $help
+          print $help;
           print $content;
           print $feed_icons;
         ?>
