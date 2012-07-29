@@ -38,7 +38,7 @@
     <?php if ($left) { ?>
       <td style="background-color:#dddaec;" id="sidebar-left">
         <div style="position:absolute; left:93px;">
-          <img src="/sites/all/themes/gentoo-theme/gridtest.gif" />
+          <img src="/sites/all/themes/drupal-gentoo-theme/gridtest.gif" />
         </div>
         <br /><br /><br /><br /><br /><br />
       <?php print $left ?>
